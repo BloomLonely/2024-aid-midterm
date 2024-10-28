@@ -5,11 +5,11 @@ exam_title = "2024 Fall Artificial Intelligence Design"
 fname = "AID_Midterm_Grading.xlsx"
 solution = '''Solution
 #### 1. (10p - 2p each)
-    (a) T <br>
-    (b) T <br>
-    (c) F <br>
-    (d) T <br>
-    (e) F <br>
+    (a) T
+    (b) T
+    (c) F
+    (d) T
+    (e) F
 
 2. (12p - 3p each)
 - (a) Untracked
