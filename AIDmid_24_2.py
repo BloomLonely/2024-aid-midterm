@@ -40,8 +40,10 @@ solution = '''
 #### 6. (18p)
     (a) - 4p
     42
+    
     (b) - 4p
     21
+    
     (c) - 6p
     def border_one_2d(num):
         arr = np.zeros((num,num), dtype=int)
@@ -50,8 +52,12 @@ solution = '''
         arr[:,0]=1
         arr[:,-1]=1
         return arr
+    
     (d) - 4p
-    [[5,6,8], [8,0,5], [10,3,12], [14,13,14]]
+    [[5,6,8],
+     [8,0,5],
+     [10,3,12],
+     [14,13,14]]
 
 #### 7. (14p)
     (a) - 9p (3p each)
