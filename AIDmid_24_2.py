@@ -116,7 +116,7 @@ student_id = st.text_input("Enter your email", value='hwanheelee@cau.ac.kr')
 
 # When the user provides a student ID, fetch and display the data
 if student_id:
-    data = get_student_data(int(student_id))
+    data = get_student_data(student_id)
     
     if data is not None:
         to_show = data.set_index("e-mail")
