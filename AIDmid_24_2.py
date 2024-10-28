@@ -28,14 +28,14 @@ solution = '''
     (c) pwd
     (d) printenv
 
-#### 5. (12P)
-    mkdir /mnt/data/WorkSpace
-    cd /mnt/data/WorkSpace
-    mkdir 2024
-    cd 2024
-    pwd
-    cd ../..
-    rm -r /mnt/data/WorkSpace
+#### 5. (12P - 2p each)
+    (a) mkdir /mnt/data/WorkSpace
+    (b) cd /mnt/data/WorkSpace
+        mkdir 2024
+    (c) cd 2024
+    (d) pwd
+    (e) cd ../..
+    (f) rm -r /mnt/data/WorkSpace
 
 #### 6. (18p)
     (a) - 4p
