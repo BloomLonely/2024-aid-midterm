@@ -121,7 +121,7 @@ if student_id:
     if data is not None:
         to_show = data.set_index("e-mail")
         st.write("E-mail: ", to_show.index[0])
-        s = to_show.style.format({"Expense": lambda x : '{:.0f}'.format(x)})
+        s = to_show.style.format({"Expense": lambda x : '{:.4f}'.format(x)})
         st.dataframe(s, hide_index=True)
     else:
         st.write(f"No data found for email: {student_id}")
