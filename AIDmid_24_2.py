@@ -5,27 +5,29 @@ exam_title = "2024 Fall Artificial Intelligence Design"
 fname = "AID_Midterm_Grading.xlsx"
 solution = '''Solution
 1. (10p - 2p each)
-- (a) T
-- (b) T
-- (c) F
-- (d) T
-- (e) F
+<div style="margin-left: 20px;">
+    (a) T <br>
+    (b) T <br>
+    (c) F <br>
+    (d) T <br>
+    (e) F <br>
+</div>
 
 2. (12p - 3p each)
--- (a) Untracked
--- (b) Unmodified
--- (c) Modified
--- (d) Staged
+- (a) Untracked
+- (b) Unmodified
+- (c) Modified
+- (d) Staged
 
 3. (8p)
-Var = "this is a variable"
-echo $Var
+- Var = "this is a variable"
+- echo $Var
 
 4. (12p - 3p each)
-(a) Shell
-(b) Command Line Interface
-(c) pwd
-(d) printenv
+- (a) Shell
+- (b) Command Line Interface
+- (c) pwd
+- (d) printenv
 
 5. (12P)
 mkdir /mnt/data/WorkSpace
