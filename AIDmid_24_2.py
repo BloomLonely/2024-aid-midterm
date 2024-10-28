@@ -116,7 +116,7 @@ def get_student_data(student_id):
 st.title(exam_title)
 
 # Get the student ID from the user
-student_id = st.text_input("Enter your email", value='hwanheelee@cau.ac.kr')
+student_id = st.text_input("Erase and Enter your email", value='hwanheelee@cau.ac.kr')
 
 # When the user provides a student ID, fetch and display the data
 if student_id:
