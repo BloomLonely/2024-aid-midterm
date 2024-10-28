@@ -90,7 +90,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 # Load the Excel data
-df = pd.read_excel(fname)
+df = pd.read_excel(fname, dtype={'Student ID': 'Int64'})
 
 def get_student_data(student_id):
     """
@@ -116,12 +116,12 @@ student_id = st.text_input("Enter your email", value='hwanheelee@cau.ac.kr')
 
 # When the user provides a student ID, fetch and display the data
 if student_id:
-    data = get_student_data(student_id)
+    data = get_student_data(int(student_id))
     
     if data is not None:
         to_show = data.set_index("e-mail")
         st.write("E-mail: ", to_show.index[0])
-        s = to_show.style.format({"Expense": lambda x : '{:.4f}'.format(x)})
+        s = to_show.style.format({"Expense": lambda x : '{:.0f}'.format(x)})
         st.dataframe(s, hide_index=True)
     else:
         st.write(f"No data found for email: {student_id}")
