@@ -4,7 +4,7 @@ import pandas as pd
 exam_title = "2024 Fall Artificial Intelligence Design"
 fname = "AID_Midterm_Grading.xlsx"
 solution = '''Solution
-1. (10p - 2p each)
+#### 1. (10p - 2p each)
 <div style="margin-left: 20px;">
     (a) T <br>
     (b) T <br>
