@@ -17,59 +17,59 @@ solution = '''Solution
     (c) Modified
     (d) Staged
 
-3. (8p)
-- Var = "this is a variable"
-- echo $Var
+#### 3. (8p)
+    Var = "this is a variable"
+    echo $Var
 
-4. (12p - 3p each)
-- (a) Shell
-- (b) Command Line Interface
-- (c) pwd
-- (d) printenv
+#### 4. (12p - 3p each)
+    (a) Shell
+    (b) Command Line Interface
+    (c) pwd
+    (d) printenv
 
-5. (12P)
-mkdir /mnt/data/WorkSpace
-cd /mnt/data/WorkSpace
-mkdir 2024
-cd 2024
-pwd
-cd ../..
-rm -r /mnt/data/WorkSpace
+#### 5. (12P)
+    mkdir /mnt/data/WorkSpace
+    cd /mnt/data/WorkSpace
+    mkdir 2024
+    cd 2024
+    pwd
+    cd ../..
+    rm -r /mnt/data/WorkSpace
 
-6. (18p)
-(a) - 4p
-42
-(b) - 4p
-21
-(c) - 6p
-def border_one_2d(num):
-    arr = np.zeros((num,num), dtype=int)
-    arr[0,:]=1
-    arr[-1,:]=1
-    arr[:,0]=1
-    arr[:,-1]=1
-    return arr
-(d) - 4p
-[[5,6,8], [8,0,5], [10,3,12], [14,13,14]]
+#### 6. (18p)
+    (a) - 4p
+    42
+    (b) - 4p
+    21
+    (c) - 6p
+    def border_one_2d(num):
+        arr = np.zeros((num,num), dtype=int)
+        arr[0,:]=1
+        arr[-1,:]=1
+        arr[:,0]=1
+        arr[:,-1]=1
+        return arr
+    (d) - 4p
+    [[5,6,8], [8,0,5], [10,3,12], [14,13,14]]
 
-7. (14p)
-(a) - 9p (3p each)
-(1) git branch my_branch
-(2) git add hello.txt
-(3) git commit -m "Modified hello.txt in my_branch"
-(b) - 5p
-"git clone" is about obtaining a new local copy of a repository.
-"git pull" is about updating an existing local copy with new commits from the remote repository.
+#### 7. (14p)
+    (a) - 9p (3p each)
+    (1) git branch my_branch
+    (2) git add hello.txt
+    (3) git commit -m "Modified hello.txt in my_branch"
+    (b) - 5p
+    "git clone" is about obtaining a new local copy of a repository.
+    "git pull" is about updating an existing local copy with new commits from the remote repository.
 
-8. (8p - 4p each)
-(a) git log
-(b) git status
+#### 8. (8p - 4p each)
+    (a) git log
+    (b) git status
 
-9. (6p)
-Copyleft licenses require any derivative works to also be released under the same or a compatible open-source license,
-ensuring ongoing freedom to use, modify, and share.
-Permissive licenses, on the other hand, allow derivative works to be released under any terms, including proprietary ones,
-providing greater flexibility and fewer restrictions on how software can be used and redeistributed. '''
+#### 9. (6p)
+    Copyleft licenses require any derivative works to also be released under the same or a compatible open-source license,
+    ensuring ongoing freedom to use, modify, and share.
+    Permissive licenses, on the other hand, allow derivative works to be released under any terms, including proprietary ones,
+    providing greater flexibility and fewer restrictions on how software can be used and redeistributed. '''
 
 # Setup Title & Wide layout
 st.set_page_config(page_title=exam_title, layout="wide")
