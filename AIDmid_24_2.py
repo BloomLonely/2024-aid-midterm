@@ -90,7 +90,10 @@ st.markdown(
     unsafe_allow_html=True,
 )
 # Load the Excel data
-df = pd.read_excel(fname, dtype={'Student ID': 'Int64', '1 - 10p': 'Int64', '2 - 12p': 'Int64'})
+df = pd.read_excel(fname, dtype={'Student ID': 'Int64', '1 - 10p': 'Int64', '2 - 12p': 'Int64',
+                                '3 - 8p': 'Int64', '4 - 12p' : 'Int64', '5 - 12p' : 'Int64',
+                                '6 - 18p' : 'Int64', '7 - 14p' : 'Int64', '8 - 8p' : 'Int64',
+                                '9 - 6p' : 'Int64'})
 
 def get_student_data(student_id):
     """
