@@ -67,19 +67,16 @@ solution = '''
     
     (b) - 5p
     "git clone" is about obtaining a new local copy of a repository.
-    "git pull" is about updating an existing local copy
-    with new commits from the remote repository.
+    "git pull" is about updating an existing local copy with new commits from the remote repository.
 
 #### 8. (8p - 4p each)
     (a) git log
     (b) git status
 
 #### 9. (6p)
-    Copyleft licenses require any derivative works to also be released under the same or
-    a compatible open-source license, ensuring ongoing freedom to use, modify, and share.
-    Permissive licenses, on the other hand, allow derivative works to be released under any terms,
-    including proprietary ones, providing greater flexibility and fewer restrictions on how software
-    can be used and redeistributed. '''
+    Copyleft licenses require any derivative works to also be released under the same or a compatible open-source license, ensuring ongoing freedom to use, modify, and share.
+    Permissive licenses, on the other hand, allow derivative works to be released under any terms, including proprietary ones,
+    providing greater flexibility and fewer restrictions on how software can be used and redeistributed. '''
 
 # Setup Title & Wide layout
 st.set_page_config(page_title=exam_title, layout="wide")
