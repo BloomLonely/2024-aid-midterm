@@ -18,9 +18,9 @@ solution = '''
     (c) Modified
     (d) Staged
 
-#### 3. (8p)
-    Var = "this is a variable"
-    echo $Var
+#### 3. (8p -4p each)
+    (a) Var = "this is a variable"
+    (b) echo $Var
 
 #### 4. (12p - 3p each)
     (a) Shell
