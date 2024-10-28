@@ -6,169 +6,70 @@ fname = "AID_Midterm_Grading.xlsx"
 solution = '''Solution
 1. (10p - 2p each)
 (a) T
-(b) F
+(b) T
 (c) F
 (d) T
-(e) T
+(e) F
 
-2. (10p - 2p each)
-(a) Compile
-(b) Garbage
-(c) Object
-(d) Polymorphism
+2. (12p - 3p each)
+(a) Untracked
+(b) Unmodified
+(c) Modified
+(d) Staged
 
-3. (15p)
-(a) - 3p
-Integrated Development Environment
-(b) - 6p (2p each)
-char, short (2 bytes) / int, float (4 bytes) / double,long (8 bytes)
-(c) - 6p (2p each)
-17ff 1755 144
+3. (8p)
+Var = "this is a variable"
+echo $Var
 
-4. (7p)
-(a) - 3p
-It serves as a fallback option. It executes when none of the preceding case labels match the value of the expression being evaluated
+4. (12p - 3p each)
+(a) Shell
+(b) Command Line Interface
+(c) pwd
+(d) printenv
+
+5. (12P)
+mkdir /mnt/data/WorkSpace
+cd /mnt/data/WorkSpace
+mkdir 2024
+cd 2024
+pwd
+cd ../..
+rm -r /mnt/data/WorkSpace
+
+6. (18p)
+(a) - 4p
+42
 (b) - 4p
-200
+21
+(c) - 6p
+def border_one_2d(num):
+    arr = np.zeros((num,num), dtype=int)
+    arr[0,:]=1
+    arr[-1,:]=1
+    arr[:,0]=1
+    arr[:,-1]=1
+    return arr
+(d) - 4p
+[[5,6,8], [8,0,5], [10,3,12], [14,13,14]]
 
-5. (11P)
-import java.util.Scanner;
+7. (14p)
+(a) - 9p (3p each)
+(1) git branch my_branch
+(2) git add hello.txt
+(3) git commit -m "Modified hello.txt in my_branch"
+(b) - 5p
+"git clone" is about obtaining a new local copy of a repository.
+"git pull" is about updating an existing local copy with new commits from the remote repository.
 
-public class Summations {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a positive integer n: ");
-        int n = scanner.nextInt();
-        if (n <= 0) {
-            System.out.println("The input is wrong");
-            return;
-        }
+8. (8p - 4p each)
+(a) git log
+(b) git status
 
-        int sumA = 0;
-        for (int i = 1; i <= n; i++) {
-            sumA += i * i;
-        }
-
-        int sumB = 0;
-        int k = 1;
-        while (k <= n) {
-            if (k % 10 != 4) {
-                sumB += k;
-            }
-            k++;
-        }
-        System.out.println("A = " + sumA);
-        System.out.println("B = " + sumB);
-    }
-}
-
-for statement +4p
-(while, if) +4p
-Input +3p
-
-6. (10p)
-import java.util.Scanner;
-public class NumberPattern {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the number of rows: ");
-        int numRows = scanner.nextInt();
-        int[][] numbers = new int[numRows][];
-
-        // Store the computed values
-        for (int i = 0; i < numRows; i++) {
-            numbers[i] = new int[i + 1]; // Initialize the row with exact number of elements
-            numbers[i][0] = 1; // Set the first element of each row
-            for (int j = 1; j < numbers[i].length; j++) { // Compute values in the row
-                if (j == 1) {
-                    numbers[i][j] = 2 * numbers[i - 1][j - 1] + numbers[i - 1][j];
-                } else {
-                    numbers[i][j] = 2 * numbers[i - 1][j - 1] + numbers[i][1][j - 1];
-                }
-            }
-        }
-
-        // Printing the numbers as per the computed matrix
-        for (int i = 0; i < numRows; i++) {
-            for (int j = 0; j < numbers[i].length; j++) {
-                System.out.print(numbers[i][j] + " ");
-            }
-            System.out.println();
-        }
-        
-        scanner.close();
-    }
-}
-
-Input part +2p
-Algorithm, output part +8p
-
-9-a 
-
-2 4 6 8 10
-
-9-b 
-The error arises because the class AccessEx is attempting to access private members "b" of the Sample class, 
-which are not accessible outside of the Sample class itself. There can be two possible ways to fix these errors.
-
-Solution: 
-1. Make b accessible: We can change the access modifier of b from private to either public or protected, depending on your design requirements.
-2. Provide a public method to access b: We can create a public method within the Sample class to set the value of b.
-
-Explain the Error correctly +4 point
-Right solution +3 point 
-
-10.
-import java.util.Scanner;
-
-class Circle {
-    private double radius;
-    private double centerX;
-    private double centerY;
-
-    public Circle(double radius, double centerX, double centerY) {
-        this.radius = radius;
-        this.centerX = centerX;
-        this.centerY = centerY;
-    }
-
-    public boolean hasIntersection(Circle other) {
-        double distanceBetweenCenters = calculateDistance(centerX, centerY, other.centerX, other.centerY);
-        return distanceBetweenCenters < radius + other.radius;
-    }
-
-    private double calculateDistance(double x1, double y1, double x2, double y2) {
-        return Math.sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1));
-    }
-}
-public class CircleIntersectionChecker {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the radius and coordinates of the first and second circle:");
-        double radius1 = scanner.nextDouble();
-        double centerX1 = scanner.nextDouble();
-        double centerY1 = scanner.nextDouble();
-        double radius2 = scanner.nextDouble();
-        double centerX2 = scanner.nextDouble();
-        double centerY2 = scanner.nextDouble();
-        Circle circle1 = new Circle(radius1, centerX1, centerY1);
-        Circle circle2 = new Circle(radius2, centerX2, centerY2);
-
-        if (circle1.hasIntersection(circle2)) {
-            System.out.println("YES");
-        } else {
-            System.out.println("NO");
-        }
-        
-        scanner.close();
-    }
-}
-
-Circle Class +6p
-Main Program  +6p 
-
-Problem with the output part -3p
-'''
+9. (6p)
+Copyleft licenses require any derivative works to also be released under the same or a compatible open-source license,
+ensuring ongoing freedom to use, modify, and share.
+Permissive licenses, on the other hand, allow derivative works to be released under any terms, including proprietary ones,
+providing greater flexibility and fewer restrictions on how software can be used and redeistributed. '''
 
 # Setup Title & Wide layout
 st.set_page_config(page_title=exam_title, layout="wide")
