@@ -55,9 +55,10 @@ solution = '''
 
 #### 7. (14p)
     (a) - 9p (3p each)
-    (1) git branch my_branch
-    (2) git add hello.txt
-    (3) git commit -m "Modified hello.txt in my_branch"
+    1. git branch my_branch
+    2. git add hello.txt
+    3. git commit -m "Modified hello.txt in my_branch"
+    
     (b) - 5p
     "git clone" is about obtaining a new local copy of a repository.
     "git pull" is about updating an existing local copy
