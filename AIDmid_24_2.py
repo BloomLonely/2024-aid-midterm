@@ -11,11 +11,11 @@ solution = '''Solution
     (d) T
     (e) F
 
-2. (12p - 3p each)
-- (a) Untracked
-- (b) Unmodified
-- (c) Modified
-- (d) Staged
+#### 2. (12p - 3p each)
+(a) Untracked
+(b) Unmodified
+(c) Modified
+(d) Staged
 
 3. (8p)
 - Var = "this is a variable"
