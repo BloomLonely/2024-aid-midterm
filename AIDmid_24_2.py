@@ -7,7 +7,7 @@ import requests
 # github_token = st.secrets["GITHUB_TOKEN"]
 # headers = {"Authorization": f"token {github_token}"}
 
-# exam_title = "2024 Fall Artificial Intelligence Design"
+exam_title = "2024 Fall Artificial Intelligence Design"
 fname = "AID_Midterm_Grading.xlsx"
 #response = requests.get(fname, headers=headers)
 solution = '''
